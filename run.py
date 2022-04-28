@@ -22,7 +22,6 @@ print("""
 
 
 print("Welcome to Bandersnatch.")
-print()
 print("You are programmer who has just developed a new computer game 'Bandersnatch' you must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 print("There are numerous possible paths so please choose wisely to complete your own adventure.")
