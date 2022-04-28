@@ -30,8 +30,6 @@ user_name = input("What is your name?\n")
 print()
 print("Welcome " + user_name + ". \nlets start your adventure shall we?\nRemember to choose the right path to make 'Bandersnatch' a reality.")
 print()
-print("You have just devleoped an idea for a computer game and need to pitch the idea to Tuckersoft Ltd to help you develop it")
-print()
 choice1 = input("You\'re traveling to the company and are at a crossraods, which way do you want to go? Type 'left' or 'right'.\n").lower()
 print()
 if choice1 == "left":
