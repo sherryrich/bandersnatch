@@ -12,3 +12,7 @@ print("""
 
 print("Welcome to Bandersnatch")
 print("Choose your own adventure")
+user_name = input("What is your name?")
+print()
+print("Welcome " + user_name + " Lets start shall we?")
+print("You have just devleoped an idea for a computer game and need to pitch the idea to Tuckersoft Ltd to help you develop it")
