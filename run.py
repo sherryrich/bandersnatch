@@ -14,7 +14,7 @@ def typewrite(string):
         time.sleep(0.04)
 
 
-print("""
+print(F"""{Fore.RED}
   ___   _   _  _ ___  ___ ___  ___ _  _   _ _____ ___ _  _ 
  | _ ) /_\ | \| |   \| __| _ \/ __| \| | /_\_   _/ __| || |
  | _ \/ _ \| .` | |) | _||   /\__ \ .` |/ _ \| || (__| __ |
@@ -52,7 +52,7 @@ if choice1 == "left":
         elif choice3 == "2":
             print("Bad choice, they take your idea and it fails to get any sales due to poor reviews. Game over")
         elif choice3 == "3":
-            print("Good choice. You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess. You Win")
+            print(F"{Fore.GREEN}Good choice. You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess. You Win")
         else:
             print("You failed to take any offer. Game over")
     else:
