@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Delopyed site can be viewed [here](https://sherryrich.github.io/bandersnatch/)
+Delopyed site can be viewed [here](https://sherryrich-bandersnatch.herokuapp.com/)
 
 Welcome sherryrich,
 
