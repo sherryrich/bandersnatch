@@ -21,13 +21,18 @@ print("""
 # of new full-width/kern/smush alternatives, but default output is NOT changed.
 
 
-print("Welcome to Bandersnatch")
-print("You are programmer who has just developed a new computer game 'Bandersnatch' you must to get to the office of Tuckersoft Ltd to sell the game")
-print("There are numerous possible paths so please choose wisely to complete your own adventure")
+print("Welcome to Bandersnatch.")
+print()
+print("You are programmer who has just developed a new computer game 'Bandersnatch' you must to get to the office of Tuckersoft Ltd to sell the game.")
+print()
+print("There are numerous possible paths so please choose wisely to complete your own adventure.")
+print()
 user_name = input("What is your name?\n")
 print()
 print("Welcome " + user_name + ". lets start your adventure shall we? Remember to choose the right path to make 'Bandersnatch' a reality")
+print()
 print("You have just devleoped an idea for a computer game and need to pitch the idea to Tuckersoft Ltd to help you develop it")
+print()
 choice1 = input("You\'re traveling to the company and are at a crossraods, which way do you want to go? Type 'left' or 'right'.").lower()
 print()
 if choice1 == "left":
