@@ -4,6 +4,16 @@
 import colorama
 from colorama import Fore
 colorama.init(autoreset=True)
+import sys
+import time
+
+def typewrite(string):
+    for i in string:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+
 print("""
   ___   _   _  _ ___  ___ ___  ___ _  _   _ _____ ___ _  _ 
  | _ ) /_\ | \| |   \| __| _ \/ __| \| | /_\_   _/ __| || |
@@ -24,9 +34,9 @@ print("""
 
 
 print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch !\n")
-print("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
+typewrite("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
-print("There are numerous possible paths so please choose wisely to complete your own adventure.")
+typewrite("There are numerous possible paths so please choose wisely to complete your own adventure.")
 print()
 user_name = input("What is your name?\n")
 print()
