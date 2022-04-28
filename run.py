@@ -1,7 +1,26 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+from termcolor import colored
+import os
 
+# System call
+os.system("")
+
+# Class of different styles
+class style():
+    BLACK = '\033[30m'
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    YELLOW = '\033[33m'
+    BLUE = '\033[34m'
+    MAGENTA = '\033[35m'
+    CYAN = '\033[36m'
+    WHITE = '\033[37m'
+    UNDERLINE = '\033[4m'
+    RESET = '\033[0m'
+
+print(style.YELLOW)
 print("""
   ___   _   _  _ ___  ___ ___  ___ _  _   _ _____ ___ _  _ 
  | _ ) /_\ | \| |   \| __| _ \/ __| \| | /_\_   _/ __| || |
