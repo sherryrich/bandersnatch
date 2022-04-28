@@ -1,26 +1,9 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-from termcolor import colored
-import os
-
-# System call
-os.system("")
-
-# Class of different styles
-class style():
-    BLACK = '\033[30m'
-    RED = '\033[31m'
-    GREEN = '\033[32m'
-    YELLOW = '\033[33m'
-    BLUE = '\033[34m'
-    MAGENTA = '\033[35m'
-    CYAN = '\033[36m'
-    WHITE = '\033[37m'
-    UNDERLINE = '\033[4m'
-    RESET = '\033[0m'
-
-print(style.YELLOW)
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
 print("""
   ___   _   _  _ ___  ___ ___  ___ _  _   _ _____ ___ _  _ 
  | _ ) /_\ | \| |   \| __| _ \/ __| \| | /_\_   _/ __| || |
@@ -40,7 +23,7 @@ print("""
 # of new full-width/kern/smush alternatives, but default output is NOT changed.
 
 
-print("Welcome to Bandersnatch.")
+print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch !\n")
 print("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 print("There are numerous possible paths so please choose wisely to complete your own adventure.")
@@ -66,4 +49,4 @@ if choice1 == "left":
     else:
         print("Wrong choice. Taxi took you the long way around and you have missed the meeting. Tuckersoft Ltd are no longer interested. Game Over.")
 else:
-    print("Wrong choice. You just got hit by bus and died. Game Over.")
+    print("Wrong choice. You just got hit by a bus and died. Game Over.")
