@@ -22,17 +22,17 @@ print("""
 
 
 print("Welcome to Bandersnatch.")
-print("You are programmer who has just developed a new computer game 'Bandersnatch' you must to get to the office of Tuckersoft Ltd to sell the game.")
+print("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 print("There are numerous possible paths so please choose wisely to complete your own adventure.")
 print()
 user_name = input("What is your name?\n")
 print()
-print("Welcome " + user_name + ". lets start your adventure shall we? Remember to choose the right path to make 'Bandersnatch' a reality")
+print("Welcome " + user_name + ". \nlets start your adventure shall we?\nRemember to choose the right path to make 'Bandersnatch' a reality.")
 print()
 print("You have just devleoped an idea for a computer game and need to pitch the idea to Tuckersoft Ltd to help you develop it")
 print()
-choice1 = input("You\'re traveling to the company and are at a crossraods, which way do you want to go? Type 'left' or 'right'.").lower()
+choice1 = input("You\'re traveling to the company and are at a crossraods, which way do you want to go? Type 'left' or 'right'.\n").lower()
 print()
 if choice1 == "left":
     choice2 = input("Good choice. You\'re now at the trainstation and the train is running late, do you wait for the train or taxi to get to Tuckersoft Ltd? Type 'wait' to take the train or type 'taxi' to hail a taxi\n").lower()
