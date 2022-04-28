@@ -11,7 +11,7 @@ def typewrite(string):
     for i in string:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.05)
+        time.sleep(0.04)
 
 
 print("""
@@ -35,28 +35,27 @@ print("""
 
 print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch !\n")
 typewrite("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
+typewrite("There are numerous possible paths so please choose wisely to complete your\nown adventure.")
 print()
-typewrite("There are numerous possible paths so please choose wisely to complete your own adventure.")
+user_name = input("What is your name?\n").capitalize()
 print()
-user_name = input("What is your name?\n")
+print("Welcome " + user_name + "!. \nlets start your adventure shall we?\nRemember to choose the right path to make 'Bandersnatch' a reality.")
 print()
-print("Welcome " + user_name + ". \nlets start your adventure shall we?\nRemember to choose the right path to make 'Bandersnatch' a reality.")
-print()
-choice1 = input("You\'re traveling to the company and are at a crossraods, which way do you want to go? Type 'left' or 'right'.\n").lower()
+choice1 = input("You\'re traveling to the company and are at a crossraods, which way do\nyou want to go? Type 'left' or 'right'.\n").lower()
 print()
 if choice1 == "left":
-    choice2 = input("Good choice. You\'re now at the trainstation and the train is running late, do you wait for the train or taxi to get to Tuckersoft Ltd? Type 'wait' to take the train or type 'taxi' to hail a taxi\n").lower()
+    choice2 = input("Good choice. You\'re now at the train station but the train is running late, do you wait for the train or get a taxi to get to Tuckersoft Ltd offices? Type 'wait' to take the train or type 'taxi' to hail a taxi\n").lower()
     if choice2 == "wait":
-        choice3 = input("The train arrives and you make it on time for the meeting. There are 3 offers on the table. Which one do you choose? Type '1' to take offer 1, Type '2' to take offer 2, Type '3' to take offer 3\n").lower()
+        choice3 = input("Good choice. You took the train and made it on time for the meeting. Tuckersoft like the game and there are 3 offers on the table. Which one do you choose? Type '1' to take offer 1, Type '2' to take offer 2, Type '3' to take offer 3\n").lower()
         if choice3 == "1":
-            print("Bad choice, you got fired and they stole your idea")
+            print("Bad choice, you got fired and they stole your idea. Game over")
         elif choice3 == "2":
-            print("Bad choice, they take your idea and it fails to get any sales due to poor reviews")
+            print("Bad choice, they take your idea and it fails to get any sales due to poor reviews. Game over")
         elif choice3 == "3":
-            print("You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess")
+            print("Good choice. You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess. You Win")
         else:
             print("You failed to take any offer. Game over")
     else:
-        print("Wrong choice. Taxi took you the long way around and you have missed the meeting. Tuckersoft Ltd are no longer interested. Game Over.")
+        print("Wrong choice. You have missed the meeting. Tuckersoft Ltd are no longer interested. Game Over.")
 else:
     print("Wrong choice. You just got hit by a bus and died. Game Over.")
