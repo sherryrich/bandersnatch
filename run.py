@@ -22,14 +22,27 @@ print("""
 
 
 print("Welcome to Bandersnatch")
-print("YOU choose your own adventure")
+print("You are programmer who has just developed a new computer game 'Bandersnatch' you must to get to the office of Tuckersoft Ltd to sell the game")
+print("Choose wisely to complete YOUR own adventure")
 user_name = input("What is your name?")
 print()
-print("Welcome " + user_name + " Lets start your adventure shall we? Remember to choose the right path")
+print("Welcome " + user_name + ". lets start your adventure shall we? Remember to choose the right path to make 'Bandersnatch' a reality")
 print("You have just devleoped an idea for a computer game and need to pitch the idea to Tuckersoft Ltd to help you develop it")
 choice1 = input("You\'re at a crossraod, where do you want to go? Type 'left' or 'right'.").lower()
-
+print()
 if choice1 == "left":
-    input("You\'re are running late, doy ou get a taxi or train to get to Tuckersoft Ltd? Type 'wait' for train or 'taxi' to hail a taxi")
+    choice2 = input("Good choice. You\'re now at the trainstation and the train is running late, do you wait for the train or taxi to get to Tuckersoft Ltd? Type 'wait' to take the train or type 'taxi' to hail a taxi").lower()
+    if choice2 == "wait":
+        choice3 = input("The train arrives and you make it on time for the meeting. There are 3 offers on the table. Which one do you choose? Type '1' to take offer 1, Type '2' to take offer 2, Type '3' to take offer 3").lower()
+        if choice3 == "1":
+            print("Bad choice, you got fired and they stole your idea")
+        elif choice3 == "2":
+            print("Bad choice, they take your idea and it fails to get any sales due to poor reviews")
+        elif choice3 == "3":
+            print("You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess")
+        else:
+            print("You failed to take any offer. Game over")
+    else:
+        print("Wrong choice. Taxi took you the long way around and you have missed the meeting. Tuckersoft Ltd are no longer interested. Game Over.")
 else:
     print("Wrong choice. You just got hit by bus and died. Game Over.")
