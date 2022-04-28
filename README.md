@@ -1,5 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+Delopyed site can be viewed [here](https://sherryrich.github.io/bandersnatch/)
+
 Welcome sherryrich,
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
