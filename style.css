@@ -1,0 +1,12 @@
+body {
+    font-family: Arial;
+    background: #f34c4c;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
