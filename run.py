@@ -35,7 +35,8 @@ print(F"""{Fore.RED}
 
 print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch !\n")
 typewrite("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
-typewrite("There are numerous possible paths so please choose wisely to complete your\nown adventure.")
+print()
+typewrite("There are numerous\npossible paths so please choose wisely to complete your\nown adventure.")
 print()
 user_name = input("What is your name?\n").capitalize()
 print()

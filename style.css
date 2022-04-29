@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background: #f34c4c;
+    background: #000000;
 }
 
 #container {
@@ -8,5 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 120px;
+    margin: auto;
+    width: 50%;
 }
+
