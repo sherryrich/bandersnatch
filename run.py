@@ -1,6 +1,7 @@
 import colorama
 import sys
 import time
+from art import logo_art, win_art, deal_art, game_over_art
 from colorama import Fore
 colorama.init(autoreset=True)
 
@@ -12,16 +13,7 @@ def typewrite(string):
         # time.sleep(0.1)
 
 
-print(F"""{Fore.RED}
-  ___   _   _  _ ___  ___ ___  ___ _  _   _ _____ ___ _  _ 
- | _ ) /_\ | \| |   \| __| _ \/ __| \| | /_\_   _/ __| || |
- | _ \/ _ \| .` | |) | _||   /\__ \ .` |/ _ \| || (__| __ |
- |___/_/ \_\_|\_|___/|___|_|_\|___/_|\_/_/ \_\_| \___|_||_|
-                                                           
-""")
-
-# credit https://patorjk.com/software/taag/#p=author&f=Small&t=Bandersnatch
-
+print(logo_art)
 
 print(F"{Fore.YELLOW}\n\t\tWelcome to Bandersnatch \U0001F47E !\n")
 typewrite("You just developed a new computer game 'Bandersnatch'.")
@@ -38,6 +30,7 @@ if play_game == "Y":
     print("lets start your adventure " + user_name )
 else:
     print("Goodbye")
+    print(game_over_art)
 print()
 
 choice1 = input("You\'re traveling to the company and are at a crossraods, which way do\nyou want to go? Type 'left' or 'right'.\n").lower()
@@ -66,5 +59,6 @@ if lead_time:
 	    print(F"{Fore.RED}Thats too long, we cant do a deal. Game Over.")
 	elif lead_time <= 20:
 	    print(F"{Fore.GREEN}Ok you got yourself a deal.")
+	    print(deal_art)
 	else: 
 	    print("Please enter number of weeks")
