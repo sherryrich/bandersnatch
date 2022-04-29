@@ -33,7 +33,7 @@ print(F"""{Fore.RED}
 # of new full-width/kern/smush alternatives, but default output is NOT changed.
 
 
-print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch !\n")
+print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch \U0001F47E !\n")
 typewrite("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 typewrite("There are numerous\npossible paths so please choose wisely to complete your\nown adventure.")
