@@ -1,11 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 import colorama
-from colorama import Fore
-colorama.init(autoreset=True)
 import sys
 import time
+from colorama import Fore
+colorama.init(autoreset=True)
+
 
 def typewrite(string):
     for i in string:
@@ -22,21 +20,14 @@ print(F"""{Fore.RED}
                                                            
 """)
 
-# Small by Glenn Chappell 4/93 -- based on Standard
-# Includes ISO Latin-1
-# figlet release 2.1 -- 12 Aug 1994
-# Permission is hereby given to modify this font, as long as the
-# modifier's name is placed on a comment line.
-
-# Modified by Paul Burton <solution@earthlink.net> 12/96 to include new parameter
-# supported by FIGlet and FIGWin.  May also be slightly modified for better use
-# of new full-width/kern/smush alternatives, but default output is NOT changed.
+# credit https://patorjk.com/software/taag/#p=author&f=Small&t=Bandersnatch
 
 
 print(F"{Fore.YELLOW}\n\tWelcome to Bandersnatch \U0001F47E !\n")
-typewrite("You are programmer who has just developed a new computer game 'Bandersnatch'\nyou must to get to the office of Tuckersoft Ltd to sell the game.")
+typewrite("You just developed a new computer game 'Bandersnatch'.")
+typewrite("You must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
-typewrite("There are numerous\npossible paths so please choose wisely to complete your\nown adventure.")
+typewrite("There are numerous paths. Choose wisely & complete your adventure.")
 print()
 user_name = input("What is your name?\n").capitalize()
 print()
