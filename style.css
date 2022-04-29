@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial;
     background: #000000;
@@ -5,10 +12,13 @@ body {
 
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 50%;
+    width: 80%;
 }
 
+img{
+    vertical-align: middle;
+}

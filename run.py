@@ -9,7 +9,7 @@ def typewrite(string):
     for i in string:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.04)
+        # time.sleep(0.1)
 
 
 print(F"""{Fore.RED}
@@ -31,9 +31,15 @@ typewrite("There are numerous paths. Choose wisely & complete your adventure.")
 print()
 user_name = input("What is your name?\n").capitalize()
 print()
-print("Welcome " + user_name + "!. \nlets start your adventure shall we?\nRemember to choose the right path to make 'Bandersnatch' a reality.")
+print("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
 print()
-# write line do they accept to play or not?
+play_game = input("Do you wish to play? Y/N\n").capitalize()
+if play_game == "Y":
+    print("lets start your adventure " + user_name )
+else:
+    print("Goodbye")
+print()
+
 choice1 = input("You\'re traveling to the company and are at a crossraods, which way do\nyou want to go? Type 'left' or 'right'.\n").lower()
 print()
 if choice1 == "left":
