@@ -12,27 +12,27 @@ def typewrite(string):
     for i in string:
         sys.stdout.write(i)
         sys.stdout.flush()
-        # time.sleep(0.1)
+        time.sleep(0.1)
 
 
-print(logo_art)
+print(f"{Fore.RED}{logo_art}")
 
 print(F"{Fore.YELLOW}\n\t\tWelcome to Bandersnatch \U0001F47E !\n")
-typewrite("You just developed a new computer game 'Bandersnatch'.")
+typewrite("You just developed a new computer game 'Bandersnatch'. ")
 typewrite("You must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 typewrite("There are numerous paths. Choose wisely & complete your adventure.")
 print()
 play_game = input("Do you wish to play? Y/N\n").capitalize()
 if play_game == "Y":
-    print("Ok lets start your adventure")
+    typewrite("Ok lets start your adventure")
 else:
     print("Goodbye")
-    print(game_over_art)
+    print(f"{Fore.RED}{game_over_art}")
 print()
 user_name = input("What is your name?\n").capitalize()
 print()
-print("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
+typewrite("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
 print()
 
 
@@ -61,8 +61,8 @@ if lead_time:
 	if lead_time >= 21:
 	    print(F"{Fore.RED}Thats too long, we cant do a deal. Game Over.")
 	elif lead_time <= 20:
-	    print(F"{Fore.GREEN}Ok you got yourself a deal.")
-	    print(deal_art)
+	    print(F"{Fore.GREEN}Congratulations, you got yourself a deal.")
+	    print(f"{Fore.GREEN}{deal_art}")
 	else: 
 	    print("Please enter number of weeks")
 
@@ -89,14 +89,16 @@ while not game_is_finished:
     print(f"{' '.join(display)}")
 
     if guess not in chosen_word:
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        print(f"You guessed {guess}, that's not in the password. You lose a life.")
         lives -= 1
         if lives == 0:
             game_is_finished = True
             print("You lose.")
+            print(f"{Fore.RED}{game_over_art}")
     
     if not "_" in display:
         game_is_finished = True
-        print(win_art)
+        print(f"{Fore.GREEN}{win_art}")
+        typewrite("Thank you for playing Bandersnatch.")
 
     print(stages[lives])
