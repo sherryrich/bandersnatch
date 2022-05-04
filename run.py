@@ -2,8 +2,8 @@ import colorama
 import sys
 import time
 import random
-from words import word_list
-from art import logo_art, win_art, deal_art, game_over_art
+from password import password_list
+from art import logo_art, win_art, deal_art, game_over_art, stages
 from colorama import Fore
 colorama.init(autoreset=True)
 
@@ -23,17 +23,18 @@ typewrite("You must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 typewrite("There are numerous paths. Choose wisely & complete your adventure.")
 print()
-user_name = input("What is your name?\n").capitalize()
-print()
-print("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
-print()
 play_game = input("Do you wish to play? Y/N\n").capitalize()
 if play_game == "Y":
-    print("lets start your adventure " + user_name )
+    print("Ok lets start your adventure")
 else:
     print("Goodbye")
     print(game_over_art)
 print()
+user_name = input("What is your name?\n").capitalize()
+print()
+print("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
+print()
+
 
 choice1 = input("You\'re traveling to the company and are at a crossraods, which way do\nyou want to go? Type 'left' or 'right'.\n").lower()
 print()
@@ -66,9 +67,9 @@ if lead_time:
 	    print("Please enter number of weeks")
 
 game_is_finished = False
-#lives = len(stages) - 1
+lives = len(stages) - 1
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(password_list)
 word_length = len(chosen_word)
 
 display = []
@@ -76,4 +77,26 @@ for _ in range(word_length):
     display += "_"
 
 while not game_is_finished:
-    guess = input("Guess a letter: ").lower()
+    guess = input("Guess the password to complete the game. Guess a letter: ").lower()
+
+    if guess in display:
+        print(f"You've already guessed {guess}")
+
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+    print(f"{' '.join(display)}")
+
+    if guess not in chosen_word:
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        lives -= 1
+        if lives == 0:
+            game_is_finished = True
+            print("You lose.")
+    
+    if not "_" in display:
+        game_is_finished = True
+        print(win_art)
+
+    print(stages[lives])
