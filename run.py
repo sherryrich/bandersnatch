@@ -1,6 +1,8 @@
 import colorama
 import sys
 import time
+import random
+from words import word_list
 from art import logo_art, win_art, deal_art, game_over_art
 from colorama import Fore
 colorama.init(autoreset=True)
