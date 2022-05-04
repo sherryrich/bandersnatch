@@ -18,7 +18,7 @@ def typewrite(string):
 print(f"{Fore.RED}{logo_art}")
 
 print(F"{Fore.YELLOW}\n\t\tWelcome to Bandersnatch \U0001F47E !\n")
-typewrite("You just developed a new computer game 'Bandersnatch'. ")
+typewrite("You just developed a new computer game 'Bandersnatch'.\n")
 typewrite("You must to get to the office of Tuckersoft Ltd to sell the game.")
 print()
 typewrite("There are numerous paths. Choose wisely & complete your adventure.")
@@ -32,11 +32,13 @@ else:
 print()
 user_name = input("What is your name?\n").capitalize()
 print()
-typewrite("Welcome " + user_name + "!. \nRemember to choose the right path to make 'Bandersnatch' a reality.")
+typewrite("Welcome " + user_name + "!.\n")
+typewrite("Remember, choose the right path to make 'Bandersnatch' a reality.")
 print()
 
-
-choice1 = input("You\'re traveling to the company and are at a crossraods, which way do\nyou want to go? Type 'left' or 'right'.\n").lower()
+typewrite("You\'re traveling to the company and are at a crossraods\n")
+typewrite("Which way do you want to go?\n")
+choice1 = input("Type 'left' or 'right'").lower()
 print()
 if choice1 == "left":
     choice2 = input(F"{Fore.GREEN}Good choice. You\'re now at the train station but the train is running late.\nDo you wait for the train or get a taxi to get to Tuckersoft offices?\nType 'wait' to take the train or type 'taxi' to hail a taxi\n").lower()
