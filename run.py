@@ -64,3 +64,16 @@ if lead_time:
 	    print(deal_art)
 	else: 
 	    print("Please enter number of weeks")
+
+game_is_finished = False
+#lives = len(stages) - 1
+
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+
+display = []
+for _ in range(word_length):
+    display += "_"
+
+while not game_is_finished:
+    guess = input("Guess a letter: ").lower()
