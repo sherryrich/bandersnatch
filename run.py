@@ -38,14 +38,19 @@ print()
 
 typewrite("You\'re traveling to the company and are at a crossraods\n")
 typewrite("Which way do you want to go?\n")
-choice1 = input("Type 'left' or 'right'").lower()
+choice1 = input("Type 'left' or 'right'\n").lower()
 print()
 if choice1 == "left":
-    choice2 = input(F"{Fore.GREEN}Good choice. You\'re now at the train station but the train is running late.\nDo you wait for the train or get a taxi to get to Tuckersoft offices?\nType 'wait' to take the train or type 'taxi' to hail a taxi\n").lower()
+    print(F"{Fore.GREEN}Good choice " + user_name + "")
+    typewrite("You\'re at the train station but the train is running late.\n")
+    typewrite("Do you wait for a train or get a taxi to Tuckersoft offices?\n")
+    choice2 = input("Type 'wait' for train or 'taxi' take a taxi\n").lower()
     if choice2 == "wait":
-        choice3 = input(F"{Fore.GREEN}Good choice. You took the train and made it on time for the meeting. Tuckersoft like the game.\nThere are 3 offers on the table. Which one do you choose?\nType '1' to take offer 1\nType '2' to take offer 2\nType '3' to take offer 3\n").lower()
+        print(F"{Fore.GREEN}Good choice " + user_name + "")
+        choice3 = input("You took the train and made it on time for the meeting. Tuckersoft like the game.\nThere are 3 offers on the table. Which one do you choose?\nType '1' to take offer 1\nType '2' to take offer 2\nType '3' to take offer 3\n").lower()
         if choice3 == "1":
-            print(F"{Fore.RED}Bad choice, you got fired and they stole your idea. Game over")
+            print(F"{Fore.RED}Bad choice, you didnt get hired")
+            print("Tuckersoft they stole your idea. Game over")
         elif choice3 == "2":
             print(F"{Fore.RED}Bad choice, they take your idea and it fails to get any sales due to poor reviews. Game over")
         elif choice3 == "3":
