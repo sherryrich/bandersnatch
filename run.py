@@ -14,7 +14,6 @@ def typewrite(string):
         sys.stdout.flush()
         time.sleep(0.1)
 
-
 print(f"{Fore.RED}{logo_art}")
 
 print(F"{Fore.YELLOW}\n\t\tWelcome to Bandersnatch \U0001F47E !\n")
@@ -32,7 +31,7 @@ else:
 print()
 user_name = input("What is your name?\n").capitalize()
 print()
-typewrite("Welcome " + user_name + "!.\n")
+typewrite("Welcome " + user_name + "!\n")
 typewrite("Remember, choose the right path to make 'Bandersnatch' a reality.")
 print()
 
@@ -58,9 +57,18 @@ if choice1 == "left":
             typewrite("Tuckersoft steal your idea. Game over\n")
             print("Game over")
         elif choice3 == "2":
-            print(F"{Fore.RED}Bad choice\n")
-            print("They steal your idea and it fails to get any sales")
-            print("Game over")
+            print(F"{Fore.YELLOW}OK, Tuckersoft are interested\n")
+            typewrite("Tuckersoft ask how many weeks will it take you\n")
+            lead_time = input("To finish the completed version?\n")
+            if lead_time:
+                lead_time = int(lead_time)
+                if lead_time >= 21:
+                    typewrite("Thats too long, Tuckersoft refuse. Game Over.")
+                if lead_time <= 20:
+                    typewrite("Congratulations, you got yourself a deal.")
+                    print(f"{Fore.YELLOW}{deal_art}")
+                else:
+                    typewrite("Please enter number of weeks")
         elif choice3 == "3":
             print(F"{Fore.GREEN}Good choice " + user_name + "")
             typewrite("You decline this offer and decide to go alone\n")
@@ -78,17 +86,17 @@ else:
     print(F"{Fore.RED}Wrong choice.")
     print("You just got hit by a bus and died. Game Over.")
 
-print("Tuckersoft ask how many weeks will it take you\n")
-lead_time = input("To finish the completed version?\n")
-if lead_time:
-	lead_time = int(lead_time)
-	if lead_time >= 21:
-	    print(F"{Fore.RED}Thats too long, we cant do a deal. Game Over.")
-	elif lead_time <= 20:
-	    print(F"{Fore.GREEN}Congratulations, you got yourself a deal.")
-	    print(f"{Fore.GREEN}{deal_art}")
-	else:
-	    print("Please enter number of weeks")
+# print("Tuckersoft ask how many weeks will it take you\n")
+# lead_time = input("To finish the completed version?\n")
+# if lead_time:
+# 	lead_time = int(lead_time)
+# 	if lead_time >= 21:
+# 	    print(F"{Fore.RED}Thats too long, we cant do a deal. Game Over.")
+# 	elif lead_time <= 20:
+# 	    print(F"{Fore.GREEN}Congratulations, you got yourself a deal.")
+# 	    print(f"{Fore.GREEN}{deal_art}")
+# 	else:
+# 	    print("Please enter number of weeks")
 
 game_is_finished = False
 lives = len(stages) - 1
