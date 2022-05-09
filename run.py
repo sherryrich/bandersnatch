@@ -36,7 +36,7 @@ typewrite("Welcome " + user_name + "!.\n")
 typewrite("Remember, choose the right path to make 'Bandersnatch' a reality.")
 print()
 
-typewrite("You\'re traveling to the company and are at a crossraods\n")
+typewrite("You\'re traveling to the company offices and are at a crossraods\n")
 typewrite("Which way do you want to go?\n")
 choice1 = input("Type 'left' or 'right'\n").lower()
 print()
@@ -47,22 +47,39 @@ if choice1 == "left":
     choice2 = input("Type 'wait' for train or 'taxi' take a taxi\n").lower()
     if choice2 == "wait":
         print(F"{Fore.GREEN}Good choice " + user_name + "")
-        choice3 = input("You took the train and made it on time for the meeting. Tuckersoft like the game.\nThere are 3 offers on the table. Which one do you choose?\nType '1' to take offer 1\nType '2' to take offer 2\nType '3' to take offer 3\n").lower()
+        typewrite("You took the train and made it on time for the meeting.\n")
+        typewrite("Tuckersoft like the game. 3 offers are now on the table.\n")
+        typewrite("Type '1' to take offer 1\n")
+        typewrite("Type '2' to take offer 2\n")
+        typewrite("Type '3' to take offer 3\n")
+        choice3 = input("Which one do you choose?\n").lower()
         if choice3 == "1":
-            print(F"{Fore.RED}Bad choice, you didnt get hired")
-            print("Tuckersoft they stole your idea. Game over")
+            print(F"{Fore.RED}Bad choice\n")
+            typewrite("Tuckersoft steal your idea. Game over\n")
+            print("Game over")
         elif choice3 == "2":
-            print(F"{Fore.RED}Bad choice, they take your idea and it fails to get any sales due to poor reviews. Game over")
+            print(F"{Fore.RED}Bad choice\n")
+            print("They steal your idea and it fails to get any sales")
+            print("Game over")
         elif choice3 == "3":
-            print(F"{Fore.GREEN}Good choice. You politely decline their offer and decide to go alone, you win and the game is a huge worldwide sucess. You Win")
+            print(F"{Fore.GREEN}Good choice " + user_name + "")
+            typewrite("You decline this offer and decide to go alone\n")
+            typewrite("Congratulations the game is a huge worldwide sucess.\n")
+            print(F"{Fore.GREEN}You Win " + user_name + "")
+            print(f"{Fore.GREEN}{win_art}")
         else:
             print(F"{Fore.RED}You failed to take any offer. Game over")
     else:
-        print(F"{Fore.RED}Wrong choice. You have missed the meeting.\nTuckersoft Ltd are no longer interested.\nGame Over.")
+        print(F"{Fore.RED}Wrong choice.")
+        print("You have missed the meeting.\n")
+        print("Tuckersoft Ltd are no longer interested.\n")
+        print("Game Over.")
 else:
-    print(F"{Fore.RED}Wrong choice. You just got hit by a bus and died. Game Over.")
+    print(F"{Fore.RED}Wrong choice.")
+    print("You just got hit by a bus and died. Game Over.")
 
-lead_time = input("The company ask how many weeks will it take you to finish the completed version?")
+print("Tuckersoft ask how many weeks will it take you\n")
+lead_time = input("To finish the completed version?\n")
 if lead_time:
 	lead_time = int(lead_time)
 	if lead_time >= 21:
@@ -70,7 +87,7 @@ if lead_time:
 	elif lead_time <= 20:
 	    print(F"{Fore.GREEN}Congratulations, you got yourself a deal.")
 	    print(f"{Fore.GREEN}{deal_art}")
-	else: 
+	else:
 	    print("Please enter number of weeks")
 
 game_is_finished = False
@@ -84,7 +101,8 @@ for _ in range(word_length):
     display += "_"
 
 while not game_is_finished:
-    guess = input("Guess the password to complete the game. Guess a letter: ").lower()
+    print("Guess the password to complete the game")
+    guess = input("Guess a letter: \n").lower()
 
     if guess in display:
         print(f"You've already guessed {guess}")
@@ -96,13 +114,12 @@ while not game_is_finished:
     print(f"{' '.join(display)}")
 
     if guess not in chosen_word:
-        print(f"You guessed {guess}, that's not in the password. You lose a life.")
+        print(f"You guessed {guess}, that's not in the password. Lose a life.")
         lives -= 1
         if lives == 0:
             game_is_finished = True
             print("You lose.")
             print(f"{Fore.RED}{game_over_art}")
-    
     if not "_" in display:
         game_is_finished = True
         print(f"{Fore.GREEN}{win_art}")
