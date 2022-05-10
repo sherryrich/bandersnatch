@@ -54,11 +54,12 @@ if choice1 == "left":
         choice3 = input("Which one do you choose?\n").lower()
         if choice3 == "1":
             print(F"{Fore.RED}Bad choice\n")
-            typewrite("Tuckersoft steal your idea. Game over\n")
+            typewrite("Tuckersoft steal your idea.\n")
             print("Game over")
         elif choice3 == "2":
             print(F"{Fore.YELLOW}OK, Tuckersoft are interested\n")
             typewrite("Tuckersoft ask how many weeks will it take you\n")
+            typewrite("Less than 20 weeks or longer?\n")
             lead_time = input("To finish the completed version?\n")
             if lead_time:
                 lead_time = int(lead_time)
@@ -75,6 +76,42 @@ if choice1 == "left":
             typewrite("Congratulations the game is a huge worldwide sucess.\n")
             print(F"{Fore.GREEN}You Win " + user_name + "")
             print(f"{Fore.GREEN}{win_art}")
+            game_is_finished = False
+            lives = len(stages) - 1
+
+            chosen_word = random.choice(password_list)
+            word_length = len(chosen_word)
+
+            display = []
+            for _ in range(word_length):
+                display += "_"
+            while not game_is_finished:
+                print("Guess the password to complete the game")
+                guess = input("Guess a letter: \n").lower()
+
+                if guess in display:
+                    print(f"You've already guessed {guess}")
+
+                for position in range(word_length):
+                    letter = chosen_word[position]
+                    if letter == guess:
+                        display[position] = letter
+                print(f"{' '.join(display)}")
+
+                if guess not in chosen_word:
+                    print(f"You guessed {guess}, incorrect. Lose a life.")
+                    lives -= 1
+                    if lives == 0:
+                        game_is_finished = True
+                        print("You lose.")
+                        print(f"{Fore.RED}{game_over_art}")
+                    if "_" not in display:
+                        game_is_finished = True
+                        print(f"{Fore.GREEN}{win_art}")
+                        typewrite("Thank you for playing Bandersnatch.")
+
+                    print(stages[lives])
+
         else:
             print(F"{Fore.RED}You failed to take any offer. Game over")
     else:
@@ -97,40 +134,3 @@ else:
 # 	    print(f"{Fore.GREEN}{deal_art}")
 # 	else:
 # 	    print("Please enter number of weeks")
-
-game_is_finished = False
-lives = len(stages) - 1
-
-chosen_word = random.choice(password_list)
-word_length = len(chosen_word)
-
-display = []
-for _ in range(word_length):
-    display += "_"
-
-while not game_is_finished:
-    print("Guess the password to complete the game")
-    guess = input("Guess a letter: \n").lower()
-
-    if guess in display:
-        print(f"You've already guessed {guess}")
-
-    for position in range(word_length):
-        letter = chosen_word[position]
-        if letter == guess:
-            display[position] = letter
-    print(f"{' '.join(display)}")
-
-    if guess not in chosen_word:
-        print(f"You guessed {guess}, that's not in the password. Lose a life.")
-        lives -= 1
-        if lives == 0:
-            game_is_finished = True
-            print("You lose.")
-            print(f"{Fore.RED}{game_over_art}")
-    if "_" not in display:
-        game_is_finished = True
-        print(f"{Fore.GREEN}{win_art}")
-        typewrite("Thank you for playing Bandersnatch.")
-
-    print(stages[lives])
