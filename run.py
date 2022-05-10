@@ -128,7 +128,7 @@ while not game_is_finished:
             game_is_finished = True
             print("You lose.")
             print(f"{Fore.RED}{game_over_art}")
-    if not "_" in display:
+    if "_" not in display:
         game_is_finished = True
         print(f"{Fore.GREEN}{win_art}")
         typewrite("Thank you for playing Bandersnatch.")
