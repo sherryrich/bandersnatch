@@ -94,7 +94,7 @@ if choice1 == "left":
             for _ in range(word_length):
                 display += "_"
             while not game_is_finished:
-                print("Guess the password to complete the game")
+                print(F"{Fore.CYAN}Guess the password to complete the game\n")
                 guess = input("Guess a letter: \n").lower()
 
                 if guess in display:
@@ -115,13 +115,16 @@ if choice1 == "left":
                         print(f"{Fore.RED}{game_over_art}")
                 if "_" not in display:
                     game_is_finished = True
+                    print(f"{Fore.GREEN}Congratulations")
                     print(f"{Fore.GREEN}{win_art}")
-                    typewrite("Thank you for playing Bandersnatch.")
+                    typewrite("Thank you for playing Bandersnatch.\n")
+                    quit()
 
                 print(stages[lives])
 
         else:
-            print(F"{Fore.RED}You failed to take any offer. Game over")
+            print(F"{Fore.RED}You failed to take any valid offer.")
+            print(f"{Fore.RED}{game_over_art}")
     else:
         print(F"{Fore.RED}Wrong choice.")
         print(F"{Fore.RED}You have missed the meeting.\n")
