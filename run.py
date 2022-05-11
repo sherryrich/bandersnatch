@@ -119,7 +119,6 @@ if choice1 == "left":
                     typewrite("Thank you for playing Bandersnatch.")
 
                 print(stages[lives])
-                quit()
 
         else:
             print(F"{Fore.RED}You failed to take any offer. Game over")
