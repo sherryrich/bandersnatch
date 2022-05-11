@@ -114,9 +114,9 @@ if choice1 == "left":
                         print("You lose.")
                         print(f"{Fore.RED}{game_over_art}")
                 if "_" not in display:
-                        game_is_finished = True
-                        print(f"{Fore.GREEN}{win_art}")
-                        typewrite("Thank you for playing Bandersnatch.")
+                    game_is_finished = True
+                    print(f"{Fore.GREEN}{win_art}")
+                    typewrite("Thank you for playing Bandersnatch.")
 
                 print(stages[lives])
                 quit()
