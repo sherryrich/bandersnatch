@@ -89,8 +89,8 @@ while continue_game:
                         print(f"{Fore.YELLOW}{deal_art}")
                         restart()
             elif choice3 == "3":
-                print(F"{Fore.GREEN} choice " + user_name + "")
-                print(F"{Fore.GREEN}You decline offer 3 and decide to\n")
+                print(F"{Fore.GREEN}Fantastic choice " + user_name + "")
+                print(F"{Fore.GREEN}You decline offer 3 and decide to")
                 print(F"{Fore.GREEN}create and sell the game yourself")
                 print(F"{Fore.GREEN}Bandersnatch is a huge hit worldwide.\n")
                 print(f"{Fore.GREEN}{win_art}")
