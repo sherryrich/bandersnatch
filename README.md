@@ -46,8 +46,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 * [Time](https://pypi.org/project/time/) used for typewrite effect delay.
 
 ### Tools
-* [Heroku](https://id.heroku.com) Heroku was used to deploy the live project.
-* [PEP8](http://pep8online.com/) PEP8 online was used to validate Python code.
+* [Heroku](https://id.heroku.com) was used to deploy the live project.
+* [PEP8](http://pep8online.com/) online was used to validate Python code.
 * [diagrams.net](https://app.diagrams.net/) was used to create the Flowchart.
 * [Balsamiq](https://balsamiq.com/) was used to create the Wireframes.
 * [amiresponsive](http://ami.responsivedesign.is/) to see how responsive the site is on different devices.
@@ -60,3 +60,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 
 ## Testing
+
+### PEP 8 Online
+[PEP8](http://pep8online.com/) was used to validate Python code to ensure no errors were shown upon submission.
+#### PEP8 validator result
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result.PNG)
