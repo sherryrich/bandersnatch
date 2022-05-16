@@ -47,6 +47,7 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ### Tools
 * [Heroku](https://id.heroku.com) was used to deploy the live project.
+* [Patorjk] was used to generate Ascii Art.
 * [PEP8](http://pep8online.com/) online was used to validate Python code.
 * [diagrams.net](https://app.diagrams.net/) was used to create the Flowchart.
 * [Balsamiq](https://balsamiq.com/) was used to create the Wireframes.
@@ -63,5 +64,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ### PEP 8 Online
 [PEP8](http://pep8online.com/) was used to validate Python code to ensure no errors were shown upon submission.
-#### PEP8 validator result
+#### PEP8 Validator result
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result.PNG)
+
+#### Lighthouse Report
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
