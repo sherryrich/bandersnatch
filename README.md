@@ -1,35 +1,19 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Bandersnatch Logo](https://github.com/sherryrich/bandersnatch/blob/main/docs/black_mirror_bandersnatch.PNG)
 
-Delopyed site can be viewed [here](https://sherryrich-bandersnatch.herokuapp.com/)
+# Bandersnatch
 
-Delopyed site with HTML, CSS can be viewed [here](https://sherryrich.github.io/bandersnatch/)
+Inspiration for this project came from The episode entitled [Bandersnatch](https://www.imdb.com/title/tt9495224/) from Netflix's popular series Black Mirror. The basic concept of the game is where the user gets to choose different scanerios and possible paths which determine the outcome of the story.
 
-Welcome sherryrich,
+A deployed link to the website can be found [here](https://sherryrich.github.io/bandersnatch/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Showcase
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_amiresponsive.PNG)
 
-## Reminders
+## User Experience
+### User Stories
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+### As the site creator:
 
-## Creating the Heroku app
+### As a first time user:
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+### As a returning user:
