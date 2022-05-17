@@ -21,7 +21,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('bandersnatch_password')
 api_pw = SHEET.worksheet('bandersnatch')
 data_pw = api_pw.get_all_values()
-print(data_pw)
+random_pw = data_pw
 continue_game = True
 
 
@@ -112,7 +112,7 @@ while continue_game:
                 print(f"{Fore.GREEN}{win_art}")
                 game_is_finished = False
                 lives = len(stages) - 1
-                chosen_word = random.choice(data_pw)
+                chosen_word = random.choice(random_pw)
                 word_length = len(chosen_word)
                 display = []
                 for _ in range(word_length):
