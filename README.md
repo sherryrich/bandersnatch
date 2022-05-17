@@ -16,6 +16,7 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 * [Design](#design)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
@@ -73,6 +74,13 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 #### Lighthouse Report
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
 
+
+## Bugs
+* [PEP8 test for membership should be 'not in'](https://stackoverflow.com/questions/24671925/pep8-e713-test-for-membership-should-be-not-in) - Updated code to pass validator.
+* [PEP8 expected 2 blank lines found 1](https://stackoverflow.com/questions/40275866/pycharm-shows-pep8-expected-2-blank-lines-found-1) - Updated code to pass validator.
+* [No newline at end of file](https://stackoverflow.com/questions/5813311/whats-the-significance-of-the-no-newline-at-end-of-file-log) - Updated code to pass validator.
+* [Indentation is not a multiple of four](https://peps.python.org/pep-0008/#indentation) - Updated code to pass validator.
+* [ModuleNotFoundError: No module named 'colorama'](https://pypi.org/project/colorama/) - Needed to install Colorama to run in terminal when testing locally.
 
 ## Deployment
 * The current deployment of this project was done using Gitpod.
