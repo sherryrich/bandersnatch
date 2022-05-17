@@ -1,4 +1,6 @@
 password_list = [
-'programmer', 
-'netflix', 
+'programmer',
+'netflix',
+'developer',
+'software',
 ]

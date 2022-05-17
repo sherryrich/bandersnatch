@@ -18,6 +18,7 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
 ## User Experience
 ### User Stories
@@ -122,3 +123,13 @@ For a more detailed explanations of the above process [Click Here](https://help.
 * [Udemy](https://www.udemy.com/course/the-modern-python3-bootcamp/) - The Modern Python 3 Bootcamp
 * [YouTube](https://www.youtube.com/watch?v=A_1THfBpCH8) - Typewriter effect in python
 * [YouTube](https://www.youtube.com/watch?v=u4QmAIoo4i0&t=81s) - Colors in Python
+
+
+
+This project is for educational use only and was created for the Code Institute Module.
+
+## Acknowledgements
+* To create this website, I relied on material covered in the Full Stack Development course by Code Institute. I also relied on information from Code Institute, Slack Community Channels, Udemy, W3Schools, MDN and YouTube for Online Web Tutorials and resources.
+* Martina Terlevic my tutor for reviewing my work and providing excellent feedback, advice, tips and additonal resources.
+
+Created by Richard Sherry :+1:
