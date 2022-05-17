@@ -1,5 +1,3 @@
-import gspread
-from google.oauth2.service_account import Credentials
 import colorama
 import sys
 import time
@@ -9,19 +7,7 @@ from art import logo_art, win_art, deal_art, game_over_art, stages
 from colorama import Fore
 colorama.init(autoreset=True)
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
 
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('bandersnatch_password')
-api_pw = SHEET.worksheet('bandersnatch')
-data_pw = api_pw.get_all_values()
-random_pw = data_pw
 continue_game = True
 
 
@@ -112,7 +98,7 @@ while continue_game:
                 print(f"{Fore.GREEN}{win_art}")
                 game_is_finished = False
                 lives = len(stages) - 1
-                chosen_word = random.choice(random_pw)
+                chosen_word = random.choice(password_list)
                 word_length = len(chosen_word)
                 display = []
                 for _ in range(word_length):
