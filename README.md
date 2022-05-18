@@ -36,6 +36,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 
 ## Design
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_logo.png)
+Favicon logo represents branch point or multiple choice. This logo also features in the Eposidoe of Bandersnatch.
 
 ## Technologies Used
 ### Languages Used 
