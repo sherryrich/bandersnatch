@@ -10,7 +10,7 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_amiresponsive.PNG)
 
 ## README Table Content
-* [Introduction](#introduction)
+* [Introduction](#bandersnatch)
 * [User Experience](#user-experience)
 * [Logic](#logic)
 * [Design](#design)
@@ -36,16 +36,33 @@ Try to remember the path chosen and dont take this path the next time.
 Choose alternative paths to see different outcomes.
 Try to complete the game by guessing the password.
 
-## Logic / Flowcharts
+## Logic
+* A flowchart was created to visualise the logical flow and various paths possible.
+
 ![Flowchart](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch.drawio.png)
 
-A flowchart was created to visualise the logical flow and various paths possible.
-
-
 ## Design
+* Favicon logo represents branch point or multiple choice. This logo also features in the Eposidoe of Bandersnatch.
+
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_logo.png)
 
-Favicon logo represents branch point or multiple choice. This logo also features in the Eposidoe of Bandersnatch.
+
+### Color
+* Colours sourced via Python Colorama, used Green, Yellow, Red & Cyan accordingly to various paths chosen and result. Example Green was chosen when user wins and Red was chosen when user ends game. The main landing page "Bandersnatch" is displayed in Yellow and "Welcome to Bandersnatch" in Red.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_color.PNG)
+
+### Features
+
+*
+*
+*
+
+### Future Features:
+* I had set up linking externally to Google Sheet API and the functionality was to retrive the password from the Google Sheet rather than the password.py file. I reverted back as felt this was adding unnessary complexity to the project as the current password.py file worked as expected.
+* Add a leaderboard and Log users details to the Google Sheet.
+
+
 
 ## Technologies Used
 ### Languages Used 
@@ -71,7 +88,6 @@ Favicon logo represents branch point or multiple choice. This logo also features
 * [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) GitHub is used to store the projects code after being pushed from Git.
 * [Gitpod](https://www.gitpod.io/) An online IDE linked to the GitHub repository used to write my code.
-
 
 
 ## Testing
@@ -112,6 +128,11 @@ Validating code via PEP8 Linter.
 * [ModuleNotFoundError: No module named 'colorama'](https://pypi.org/project/colorama/) - Needed to install Colorama to run in terminal when testing locally.
 * Line too long - example "line too long (104 > 79 characters)". I refactored the code for each line to pass the PEP8 online Validator.
 * Trailing whitespace -  I removed all whitespace to pass the PEP8 online Validator.
+* ASCII Art - The Game Over displayed incorrectly as there was a "\" located at the end of the line. I simply changed it to "\." to solve this issue.
+* ASCII Art wasnt passing the validator rules. I solved this by seeing an option to replace white space in text output with your character of choice. I chose "." and this fixed the issue.
+
+## Unfix Bugs
+* Unicode Character displaying 50% on in Firefox 
 
 ## Deployment
 * The current deployment of this project was done using Gitpod.
