@@ -74,11 +74,13 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 <details>
 <summary>Password file</summary>
+
 ![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_password.PNG)
 </details>
 
 <details>
 <summary>Art file</summary>
+
 ![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
 </details>
 
