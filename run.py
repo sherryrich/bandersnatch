@@ -59,12 +59,12 @@ while continue_game:
         typewrite("Do you wait for a train or get a taxi to Tuckersoft HQ?\n")
         choice2 = input("Type 'train' for train or 'taxi' for taxi\n").lower()
         if choice2 == "train":
-            print(F"{Fore.GREEN}Good choice " + user_name + "")
+            print(F"{Fore.GREEN}Great choice " + user_name + "")
             typewrite("You took the train and made it to the meeting.\n")
             typewrite("Tuckersoft like the game. 3 offers are on the table.\n")
-            print("Type '1' to take offer 1\n")
-            print("Type '2' to take offer 2\n")
-            print("Type '3' to take offer 3\n")
+            print("Type '1' to take offer 1")
+            print("Type '2' to take offer 2")
+            print("Type '3' to take offer 3")
             choice3 = input("Which one do you choose?\n").lower()
             if choice3 == "1":
                 print(F"{Fore.RED}Bad choice")
@@ -104,6 +104,7 @@ while continue_game:
                 for _ in range(word_length):
                     display += "_"
                 while not game_is_finished:
+                    print(F"{Fore.CYAN}BONUS GAME\n")
                     print(F"{Fore.CYAN}Guess the secret password?\n")
                     guess = input("Guess a letter: \n").lower()
                     if guess in display:
@@ -114,7 +115,7 @@ while continue_game:
                             display[position] = letter
                     print(f"{' '.join(display)}")
                     if guess not in chosen_word:
-                        print(f"You guessed {guess}, incorrect. Lose a life.")
+                        print(f"{Fore.RED}{guess}, incorrect. Lose a life.")
                         lives -= 1
                         if lives == 0:
                             game_is_finished = True
