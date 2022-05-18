@@ -1,6 +1,1 @@
-password_list = [
-'programmer',
-'netflix',
-'developer',
-'software',
-]
+password_list = ['programmer', 'netflix', 'developer', 'software', ]

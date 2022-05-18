@@ -1,6 +1,6 @@
 ![Bandersnatch Logo](https://github.com/sherryrich/bandersnatch/blob/main/docs/black_mirror_bandersnatch.PNG)
 
-# Introduction - Bandersnatch
+# Bandersnatch
 
 Inspiration for this project came from Netflix's popular series Black Mirror. A particular episode entitled [Bandersnatch](https://www.imdb.com/title/tt9495224/) where the user gets to choose different scanerios and possible paths which determine the outcome of the story.
 
@@ -140,4 +140,6 @@ This project is for educational use only and was created for the Code Institute 
 * To create this website, I relied on material covered in the Full Stack Development course by Code Institute. I also relied on information from Code Institute, Slack Community Channels, Udemy, W3Schools, MDN and YouTube for Online Web Tutorials and resources.
 * Martina Terlevic my tutor for reviewing my work and providing excellent feedback, advice, tips and additonal resources.
 
-Created by Richard Sherry :+1:
+Created by Richard Sherry :raised_hands:
+
+[Back to top](#bandersnatch)
