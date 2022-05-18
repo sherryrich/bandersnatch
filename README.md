@@ -68,8 +68,19 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ### PEP 8 Online
 [PEP8](http://pep8online.com/) was used to validate Python code to ensure no errors were shown upon submission.
+
 #### PEP8 Validator result
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result.PNG)
+
+<details>
+<summary>Password file</summary>
+![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_password.PNG)
+</details>
+
+<details>
+<summary>Art file</summary>
+![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
+</details>
 
 #### Lighthouse Report
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
