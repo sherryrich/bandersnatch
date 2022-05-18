@@ -25,18 +25,26 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 ### User Stories
 
 ### As the site creator:
+Create a simply website incorporating the app to allow users interact with the game.
+Build a simple and challenging game for users to complete.
 
 ### As a first time user:
+Immediately be informed of the main purpose of the game and how to play.
+Try to remember the path chosen and dont take this path the next time.
 
 ### As a returning user:
-
+Choose alternative paths to see different outcomes.
+Try to complete the game by guessing the password.
 
 ## Logic / Flowcharts
 ![Flowchart](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch.drawio.png)
 
+A flowchart was created to visualise the logical flow and various paths possible.
+
 
 ## Design
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_logo.png)
+
 Favicon logo represents branch point or multiple choice. This logo also features in the Eposidoe of Bandersnatch.
 
 ## Technologies Used
@@ -68,6 +76,11 @@ Favicon logo represents branch point or multiple choice. This logo also features
 
 ## Testing
 
+Extensive testing was completed to review each possible path / scanrio a user might take. This was to ensure looping back to the start and no dead ends were encountered.
+Input validation were also compelted to test possible errors.
+Validating code via PEP8 Linter.
+
+
 ### PEP 8 Online
 [PEP8](http://pep8online.com/) was used to validate Python code to ensure no errors were shown upon submission.
 
@@ -86,6 +99,7 @@ Favicon logo represents branch point or multiple choice. This logo also features
 ![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
 </details>
 
+
 #### Lighthouse Report
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
 
@@ -96,6 +110,8 @@ Favicon logo represents branch point or multiple choice. This logo also features
 * [No newline at end of file](https://stackoverflow.com/questions/5813311/whats-the-significance-of-the-no-newline-at-end-of-file-log) - Updated code to pass validator.
 * [Indentation is not a multiple of four](https://peps.python.org/pep-0008/#indentation) - Updated code to pass validator.
 * [ModuleNotFoundError: No module named 'colorama'](https://pypi.org/project/colorama/) - Needed to install Colorama to run in terminal when testing locally.
+* Line too long - example "line too long (104 > 79 characters)". I refactored the code for each line to pass the PEP8 online Validator.
+* Trailing whitespace -  I removed all whitespace to pass the PEP8 online Validator.
 
 ## Deployment
 * The current deployment of this project was done using Gitpod.
@@ -106,6 +122,21 @@ Favicon logo represents branch point or multiple choice. This logo also features
 * In the GitHub repository go to the Settings tab.
 * Next from the source section drop-down select Master Branch.
 * Once master branch is selected the page provides the link to the completed website. This can take a minute to activate and show live.
+
+## Deployment to Heroku
+* Create a new app in Heroku.
+* Select "New" and "Create new app".
+* Name the new app and click "Create new app".
+* Click on the "Settings" tab at the top of the page.
+* Open the "Reveal Config Vars" section and input the following information - KEY: PORT, VALUE: 8000.
+Nothing else is needed here for this project
+* Under the Config Vars section in "Settings" select "BuildPack" and select Python and Nodejs,
+Make sure they are in this order.
+* In "Deployment Method" click on "GitHub" to connect them.
+* Select "connect".
+* Enable Automatic Deploys" or "Deploy Branch".
+* Heroku will now deploy the site
+* NOTE: Heroku changed deploments procedure from the Heroku dashboard so subsuqnetl depoloments were completed by myself via the terminal. [See here for steps.](https://github.com/sherryrich/bandersnatch/blob/main/docs/heroku_deployment.PNG)
 
 ### Making a Local Clone
 
