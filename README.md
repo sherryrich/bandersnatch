@@ -15,7 +15,7 @@
 
 # Bandersnatch
 
-Inspiration for this project came from Netflix's popular series Black Mirror. A particular episode entitled [Bandersnatch](https://www.imdb.com/title/tt9495224/) where the user gets to choose different scanerios and possible paths which determine the outcome of the story.
+Inspiration for this project came from Netflix's popular series Black Mirror. A particular episode entitled [Bandersnatch](https://www.imdb.com/title/tt9495224/) where the user gets to choose different scenarios and possible paths which determine the outcome of the story.
 
 A deployed link to the website can be found [here](https://sherryrich.github.io/bandersnatch/)
 
@@ -27,12 +27,12 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 ### User Stories
 
 #### As the site creator:
-* Create a simply website incorporating the app to allow users interact with the game.
+* Create a simple website incorporating the app to allow users interact with the game.
 * Build a simple and challenging game for users to complete.
 
 #### As a first time user:
 * Immediately be informed of the main purpose of the game and how to play.
-* Try to remember the path chosen and dont take this path the next time.
+* Try to remember the path chosen and not to take the wrong path the next time.
 
 #### As a returning user:
 * Choose alternative paths to see different outcomes.
@@ -44,12 +44,12 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 ![Flowchart](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch.drawio.png)
 
 ## Design
-* Favicon logo represents branch point or multiple choice. This logo also features in the Eposidoe of Bandersnatch.
+* Favicon logo represents branch point or multiple choice. This logo also features in the episode of Bandersnatch.
 
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_logo.png)
 
 
-### Color
+### Colour
 * Colours sourced via Python Colorama, used Green, Yellow, Red & Cyan accordingly to various paths chosen and result. Example Green was chosen when user wins and Red was chosen when user ends game. The main landing page "Bandersnatch" is displayed in Yellow and "Welcome to Bandersnatch" in Red.
 
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_color.PNG)
@@ -61,7 +61,7 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 *
 
 ### Future Features:
-* I had set up linking externally to Google Sheet API and the functionality was to retrive the password from the Google Sheet rather than the password.py file. I reverted back as felt this was adding unnessary complexity to the project as the current password.py file worked as expected.
+* I had set up linking externally to Google Sheet API and the functionality was to retrieve the password from the Google Sheet rather than the password.py file. I reverted back as felt this was adding unnecessary complexity to the project as the current password.py file worked as expected.
 * Add a leaderboard and Log users details to the Google Sheet.
 
 
@@ -94,8 +94,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ## Testing
 
-Extensive testing was completed to review each possible path / scanrio a user might take. This was to ensure looping back to the start and no dead ends were encountered.
-Input validation were also compelted to test possible errors.
+Extensive testing was completed to review each possible path / scenario a user might take. This was to ensure looping back to the start and no dead ends were encountered.
+Input validation were also completed to test possible errors.
 Validating code via PEP8 Linter.
 
 
@@ -131,12 +131,12 @@ Validating code via PEP8 Linter.
 * Line too long - example "line too long (104 > 79 characters)". I refactored the code for each line to pass the PEP8 online Validator.
 * Trailing whitespace -  I removed all whitespace to pass the PEP8 online Validator.
 * ASCII Art - The Game Over displayed incorrectly as there was a "\" located at the end of the line. I simply changed it to "\." to solve this issue.
-* ASCII Art wasnt passing the validator rules. I solved this by seeing an option to replace white space in text output with your character of choice. I chose "." and this fixed the issue.
+* ASCII Art was failing to pass the PEP8 online validator. I solved this by seeing an option to replace white space in text output with your character of choice. I chose "." and this fixed the issue.
 
 ## Unfix Bugs
 * Unicode Character displaying 50% on in Firefox.
-* Looping issue after game ends to re-start, ocassionally stalls.
-* User selcting keys while typewrite effect is running.
+* Looping issue after game ends to re-start, occasionally stalls.
+* User selecting keys while typewrite effect is running.
 
 ## Deployment
 * The current deployment of this project was done using Gitpod.
@@ -160,8 +160,8 @@ Make sure they are in this order.
 * In "Deployment Method" click on "GitHub" to connect them.
 * Select "connect".
 * Enable Automatic Deploys" or "Deploy Branch".
-* Heroku will now deploy the site
-* NOTE: Heroku changed deploments procedure from the Heroku dashboard so subsuqnetl depoloments were completed by myself via the terminal. [See here for steps.](https://github.com/sherryrich/bandersnatch/blob/main/docs/heroku_deployment.PNG)
+* Heroku will now deploy the site.
+* NOTE: Heroku deployment procedure changed from the Heroku dashboard so subsequent depoloments were deployments via the terminal only. [See here for steps.](https://github.com/sherryrich/bandersnatch/blob/main/docs/heroku_deployment.PNG)
 
 ### Making a Local Clone
 
@@ -196,19 +196,19 @@ For a more detailed explanations of the above process [Click Here](https://help.
 * [Code Institute](https://codeinstitute.net/ie/) - Full Stack Developer Course.
 * [Love Sandwiches](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode/) - AJGreaves Code along for love sandwiches.
 * [W3Schools](https://www.w3schools.com/) - Help and inspiration.
-* [MDN](https://developer.mozilla.org/en-US/) - Soures of information.
+* [MDN](https://developer.mozilla.org/en-US/) - Constant source of information.
 * [Udemy](https://www.udemy.com/course/100-days-of-code/) - 100 Days of Code: The Complete Python Pro Bootcamp for 2022.
 * [Udemy](https://www.udemy.com/course/100-days-of-code/learn/lecture/19140848#overview) - Hangman - 100 Days of Code: The Complete Python Pro Bootcamp for 2022.
 * [Udemy](https://www.udemy.com/course/the-modern-python3-bootcamp/) - The Modern Python 3 Bootcamp
 * [YouTube](https://www.youtube.com/watch?v=A_1THfBpCH8) - Typewriter effect in python
-* [YouTube](https://www.youtube.com/watch?v=u4QmAIoo4i0&t=81s) - Colors in Python
-
-## Note 
-This project is for educational use only and was created for the Code Institute Module.
+* [YouTube](https://www.youtube.com/watch?v=u4QmAIoo4i0&t=81s) - Colours in Python
 
 ## Acknowledgements
 * To create this website, I relied on material covered in the Full Stack Development course by Code Institute. I also relied on information from Code Institute, Slack Community Channels, Udemy, W3Schools, MDN and YouTube for Online Web Tutorials and resources.
-* Martina Terlevic my tutor for reviewing my work and providing excellent feedback, advice, tips and additonal resources.
+* Martina Terlevic my tutor for reviewing my work and providing excellent feedback, advice, tips and additional resources.
+
+## Note 
+This project is for educational use only and was created for the Code Institute Module.
 
 Created by Richard Sherry :sunglasses:
 
