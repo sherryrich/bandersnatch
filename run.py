@@ -46,7 +46,7 @@ while continue_game:
     print()
     user_name = input("What is your name?\n").capitalize()
     print()
-    typewrite("Welcome " + user_name + "!\n")
+    print(F"{Fore.YELLOW}Welcome " + user_name + "!\n")
     typewrite("Remember, choose the right path to make 'Bandersnatch' reality")
     print()
     typewrite("You\'re traveling to Tuckersoft HQ and are at a crossroads.\n")
@@ -58,7 +58,7 @@ while continue_game:
         typewrite("You\'re at the train station but the train is late.\n")
         typewrite("Do you wait for a train or get a taxi to Tuckersoft HQ?\n")
         choice2 = input("Type 'train' for train or 'taxi' for taxi\n").lower()
-        if choice2 == "train":
+        if choice2 == "train" or "wait":
             print(F"{Fore.GREEN}Great choice " + user_name + "")
             typewrite("You took the train and made it to the meeting.\n")
             typewrite("Tuckersoft like the game. 3 offers are on the table.\n")
