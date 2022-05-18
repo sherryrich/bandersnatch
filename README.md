@@ -1,5 +1,18 @@
 ![Bandersnatch Logo](https://github.com/sherryrich/bandersnatch/blob/main/docs/black_mirror_bandersnatch.PNG)
 
+## README Table of contents
+* [Introduction](#bandersnatch)
+* [User Experience](#user-experience)
+* [Logic](#logic)
+* [Design](#design)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
+
 # Bandersnatch
 
 Inspiration for this project came from Netflix's popular series Black Mirror. A particular episode entitled [Bandersnatch](https://www.imdb.com/title/tt9495224/) where the user gets to choose different scanerios and possible paths which determine the outcome of the story.
@@ -9,32 +22,21 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 ## Showcase
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_amiresponsive.PNG)
 
-## README Table Content
-* [Introduction](#bandersnatch)
-* [User Experience](#user-experience)
-* [Logic](#logic)
-* [Design](#design)
-* [Technologies Used](#technologies-used)
-* [Testing](#testing)
-* [Bugs](#bugs)
-* [Deployment](#deployment)
-* [Credits](#credits)
-* [Acknowledgements](#acknowledgements)
 
 ## User Experience
 ### User Stories
 
-### As the site creator:
-Create a simply website incorporating the app to allow users interact with the game.
-Build a simple and challenging game for users to complete.
+#### As the site creator:
+* Create a simply website incorporating the app to allow users interact with the game.
+* Build a simple and challenging game for users to complete.
 
-### As a first time user:
-Immediately be informed of the main purpose of the game and how to play.
-Try to remember the path chosen and dont take this path the next time.
+#### As a first time user:
+* Immediately be informed of the main purpose of the game and how to play.
+* Try to remember the path chosen and dont take this path the next time.
 
-### As a returning user:
-Choose alternative paths to see different outcomes.
-Try to complete the game by guessing the password.
+#### As a returning user:
+* Choose alternative paths to see different outcomes.
+* Try to complete the game by guessing the password.
 
 ## Logic
 * A flowchart was created to visualise the logical flow and various paths possible.
@@ -104,15 +106,15 @@ Validating code via PEP8 Linter.
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result.PNG)
 
 <details>
-<summary>Password file</summary>
+<summary>Password file result</summary>
 
-![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_password.PNG)
+![Password File result](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_password.PNG)
 </details>
 
 <details>
-<summary>Art file</summary>
+<summary>Art file result</summary>
 
-![Password File](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
+![Password File result](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
 </details>
 
 
@@ -132,7 +134,9 @@ Validating code via PEP8 Linter.
 * ASCII Art wasnt passing the validator rules. I solved this by seeing an option to replace white space in text output with your character of choice. I chose "." and this fixed the issue.
 
 ## Unfix Bugs
-* Unicode Character displaying 50% on in Firefox 
+* Unicode Character displaying 50% on in Firefox.
+* Looping issue after game ends to re-start, ocassionally stalls.
+* User selcting keys while typewrite effect is running.
 
 ## Deployment
 * The current deployment of this project was done using Gitpod.
@@ -199,14 +203,13 @@ For a more detailed explanations of the above process [Click Here](https://help.
 * [YouTube](https://www.youtube.com/watch?v=A_1THfBpCH8) - Typewriter effect in python
 * [YouTube](https://www.youtube.com/watch?v=u4QmAIoo4i0&t=81s) - Colors in Python
 
-
-
+## Note 
 This project is for educational use only and was created for the Code Institute Module.
 
 ## Acknowledgements
 * To create this website, I relied on material covered in the Full Stack Development course by Code Institute. I also relied on information from Code Institute, Slack Community Channels, Udemy, W3Schools, MDN and YouTube for Online Web Tutorials and resources.
 * Martina Terlevic my tutor for reviewing my work and providing excellent feedback, advice, tips and additonal resources.
 
-Created by Richard Sherry :raised_hands:
+Created by Richard Sherry :sunglasses:
 
 [Back to top](#bandersnatch)

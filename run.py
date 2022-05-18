@@ -62,9 +62,9 @@ while continue_game:
             print(F"{Fore.GREEN}Good choice " + user_name + "")
             typewrite("You took the train and made it to the meeting.\n")
             typewrite("Tuckersoft like the game. 3 offers are on the table.\n")
-            typewrite("Type '1' to take offer 1\n")
-            typewrite("Type '2' to take offer 2\n")
-            typewrite("Type '3' to take offer 3\n")
+            print("Type '1' to take offer 1\n")
+            print("Type '2' to take offer 2\n")
+            print("Type '3' to take offer 3\n")
             choice3 = input("Which one do you choose?\n").lower()
             if choice3 == "1":
                 print(F"{Fore.RED}Bad choice")
