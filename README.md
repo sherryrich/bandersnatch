@@ -56,7 +56,10 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ### Features
 
-*
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_welcome.PNG)
+
+* Users are greeted and asked for their name which is then used later in the game.
+
 *
 *
 

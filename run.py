@@ -71,7 +71,7 @@ while continue_game:
             print("Type '3' to take offer 3")
             choice3 = input("Which one do you choose?\n").lower()
             if choice3 == "1":
-                print(F"{Fore.RED}Bad choice")
+                print(F"{Fore.RED}Bad choice" + user_name + "!")
                 print(F"{Fore.RED}Tuckersoft steal your idea.")
                 print(F"{Fore.RED}Sell the game directly themselves.\n")
                 print(f"{Fore.RED}{game_over_art}")
@@ -85,7 +85,7 @@ while continue_game:
                 if lead_time:
                     lead_time = int(lead_time)
                     if lead_time >= 21:
-                        print(F"{Fore.RED}Bad choice")
+                        print(F"{Fore.RED}Bad choice" + user_name + "!")
                         print(f"{Fore.RED}Thats too long, Tuckersoft refuse.")
                         print(f"{Fore.RED}No deal this time.")
                         print(f"{Fore.RED}{game_over_art}")
@@ -150,13 +150,13 @@ while continue_game:
                 print(f"{Fore.RED}{game_over_art}")
                 restart()
         else:
-            print(F"{Fore.RED}Wrong choice.")
+            print(F"{Fore.RED}Wrong choice." + user_name + "!")
             print(F"{Fore.RED}You have missed the meeting.\n")
             print(F"{Fore.RED}Tuckersoft Ltd are no longer interested.\n")
             print(f"{Fore.RED}{game_over_art}")
             restart()
     else:
-        print(F"{Fore.RED}Wrong choice.")
+        print(F"{Fore.RED}Wrong choice." + user_name + "!")
         print(F"{Fore.RED}You just got hit by a bus and died.")
         print(f"{Fore.RED}{game_over_art}")
         restart()
