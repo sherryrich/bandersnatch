@@ -56,13 +56,18 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 ### Features
 
-![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_welcome.PNG)
-
 Users are greeted and asked for their name which is then used later in the game.
 
-![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_wrong_choice_loop.PNG)
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_welcome.PNG)
 
 When users choose the incorrect path they are displayed why it was the wrong path and shown game over message.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_game_over.PNG)
+
+
+They are then given with the option of starting again which loops back to the start.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_play_again.PNG)
 
 ### Future Features:
 * I had set up linking externally to Google Sheet API and the functionality was to retrieve the password from the Google Sheet rather than the password.py file. I reverted back as felt this was adding unnecessary complexity to the project as the current password.py file worked as expected.
