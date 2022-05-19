@@ -101,7 +101,6 @@ while continue_game:
                 print(F"{Fore.GREEN}You decline offer 3 and decide to")
                 print(F"{Fore.GREEN}create and sell the game yourself")
                 print(F"{Fore.GREEN}Bandersnatch is a huge hit worldwide.\n")
-                print(f"{Fore.GREEN}{win_art}")
                 game_is_finished = False
                 lives = len(stages) - 1
                 # choose random word in password_list as assign to variable
