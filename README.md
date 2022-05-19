@@ -152,9 +152,17 @@ Validating code via PEP8 Linter.
 ![Password File result](https://github.com/sherryrich/bandersnatch/blob/main/docs/pep8online_validator_result_art.PNG)
 </details>
 
+<details>
+<summary>Lighthouse result</summary>
 
-#### Lighthouse Report
-![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
+![Lighthouse result](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_lightouse_report.PNG)
+</details>
+
+<details>
+<summary>HTML result</summary>
+
+![HTML result](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_html_validator_result.PNG)
+</details>
 
 
 ## Bugs
