@@ -50,9 +50,8 @@ A deployed link to the website can be found [here](https://sherryrich.github.io/
 
 
 ### Colour
-* Colours sourced via Python Colorama, used Green, Yellow, Red & Cyan accordingly to various paths chosen and result. Example Green was chosen when user wins and Red was chosen when user ends game. The main landing page "Bandersnatch" is displayed in Yellow and "Welcome to Bandersnatch" in Red.
+* Colours sourced via Python Colorama, used Green, Yellow, Red & Cyan accordingly to various paths chosen and result. Example Green was chosen when user wins and Red was chosen when user ends game. The main landing page "Bandersnatch" is displayed in Yellow and "Welcome to Bandersnatch" in Red. See various screen shots below.
 
-![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_color.PNG)
 
 ### Features
 
