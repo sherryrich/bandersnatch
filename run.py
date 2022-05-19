@@ -29,6 +29,7 @@ def typewrite(string):
         sys.stdout.flush()
         time.sleep(0.1)
 
+
 while continue_game:
     # intro to game
     print(f"{Fore.YELLOW}{logo_art}")
@@ -62,7 +63,7 @@ while continue_game:
         typewrite("You\'re at the train station but the train is late.\n")
         typewrite("Do you wait for a train or get a taxi to Tuckersoft HQ?\n")
         choice2 = input("Type 'train' for train or 'taxi' for taxi\n").lower()
-        if choice2 == "train" or "wait":
+        if choice2 == "train":
             print(F"{Fore.GREEN}Great choice " + user_name + "")
             typewrite("You took the train and made it to the meeting.\n")
             typewrite("Tuckersoft like the game. 3 offers are on the table.\n")
