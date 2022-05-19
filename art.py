@@ -1,4 +1,8 @@
 # credit https://patorjk.com/software/taag/#p=author&f=Small&t=Bandersnatch
+# prints ASCII art from various stages in the game 
+# intro to Bandersnatch
+# win, deal & game over
+# lives left to guess password
 
 logo_art = ("""
 ..___...._...._.._..___...___..___..___.._.._...._.._____..___.._.._.

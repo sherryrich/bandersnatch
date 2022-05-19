@@ -12,6 +12,7 @@ continue_game = True
 
 
 def restart():
+    # ask user to restart game
     print(F"{Fore.YELLOW}Would you like to play again?\n")
     restart = input("Type 'Y' or 'N'\n").lower()
     if restart == "y":
@@ -29,6 +30,7 @@ def typewrite(string):
         time.sleep(0.1)
 
 while continue_game:
+    # intro to game
     print(f"{Fore.YELLOW}{logo_art}")
     print(F"{Fore.RED}\n\t\tWelcome to Bandersnatch \U0001F47E !\n")
     typewrite("You just developed a new computer game 'Bandersnatch'.\n")
@@ -36,6 +38,7 @@ while continue_game:
     print()
     typewrite("Numerous paths so choose wisely to complete your adventure")
     print()
+    # ask user do they want to play
     play_game = input("Do you wish to play? Y/N\n").capitalize()
     if play_game == "Y":
         typewrite("Ok lets start your adventure")
@@ -44,6 +47,7 @@ while continue_game:
         print(f"{Fore.RED}{game_over_art}")
         restart()
     print()
+    # ask user for name
     user_name = input("What is your name?\n").capitalize()
     print()
     print(F"{Fore.YELLOW}Welcome " + user_name + "!\n")
@@ -77,6 +81,7 @@ while continue_game:
                 typewrite("Tuckersoft ask how many weeks will it take you\n")
                 typewrite("to finish the completed version?\n")
                 lead_time = input("Type a number between 1-40\n")
+                # if user selects >= 21 they fail
                 if lead_time:
                     lead_time = int(lead_time)
                     if lead_time >= 21:
@@ -85,6 +90,7 @@ while continue_game:
                         print(f"{Fore.RED}No deal this time.")
                         print(f"{Fore.RED}{game_over_art}")
                         restart()
+                    # if they answer <= 20 they get to password game
                     if lead_time <= 20:
                         print(f"{Fore.YELLOW}Congratulations, you got a deal.")
                         print(f"{Fore.YELLOW}Next time try another offer?")
@@ -98,22 +104,30 @@ while continue_game:
                 print(f"{Fore.GREEN}{win_art}")
                 game_is_finished = False
                 lives = len(stages) - 1
+                # choose random word in password_list as assign to variable
                 chosen_word = random.choice(password_list)
                 word_length = len(chosen_word)
+                # empty list
                 display = []
+                # loop and display "_" for each letter
                 for _ in range(word_length):
                     display += "_"
                 while not game_is_finished:
                     print(F"{Fore.CYAN}BONUS GAME\n")
                     print(F"{Fore.CYAN}Guess the secret password?\n")
+                    # ask user to guess a letter and assign answer to var
+                    # make guess lowercase
                     guess = input("Guess a letter: \n").lower()
                     if guess in display:
                         print(f"You've already guessed {guess}")
                     for position in range(word_length):
                         letter = chosen_word[position]
+                        # if guessed letter is in chosen word display
                         if letter == guess:
                             display[position] = letter
                     print(f"{' '.join(display)}")
+                    # if guess not in word reduce lives by 1
+                    # if lives go to 0 then game over
                     if guess not in chosen_word:
                         print(f"{Fore.RED}{guess}, incorrect. Lose a life.")
                         lives -= 1
@@ -122,6 +136,7 @@ while continue_game:
                             print("You lose.")
                             print(f"{Fore.RED}{game_over_art}")
                             restart()
+                    # display has no more blanks they have won
                     if "_" not in display:
                         game_is_finished = True
                         print(f"{Fore.GREEN}Congratulations")
