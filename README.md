@@ -68,6 +68,33 @@ They are then given with the option of starting again which loops back to the st
 
 ![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_play_again.PNG)
 
+Offer on the table - multiple paths to choose from.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_paths.PNG)
+
+Offer 2 path - a deal is done if you choose <= 20 weeks only. Otherwise user is advised wrong choice and game ends.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_offer_2_path.PNG)
+
+* Offer 3 path - user wins and is shown a bonus guess the password game.
+* Random word is chosen as the password to guess.
+* "_" blank spaces displayed as per the random word.
+* User asked to choose a letter.
+* If the letter is contained withing the random word then it replaces the blank space.
+* If the letter is not within the random word the user looses a life.
+* If the user has 5 failed attempts the game is over and asked would they like to play again.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_offer_3_path.PNG)
+
+User is given 5 attempts to guess the password.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_5_lives.PNG)
+
+If the user correctly guess the random word they completed the game Bandersnatch.
+
+![Preview](https://github.com/sherryrich/bandersnatch/blob/main/docs/bandersnatch_win_game.PNG)
+
+
 ### Future Features:
 * I had set up linking externally to Google Sheet API and the functionality was to retrieve the password from the Google Sheet rather than the password.py file. I reverted back as felt this was adding unnecessary complexity to the project as the current password.py file worked as expected.
 * Add a leaderboard and Log users details to the Google Sheet.
